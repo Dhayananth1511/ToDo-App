@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo App</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="shortcut icon" href="to-do-list.png" type="image/x-icon">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Todo App</h1>
+      <p>Create, complete, edit, and delete your tasks.</p>
+    </header>
+
+    <section class="add-row">
+      <input id="newTitle" type="text" placeholder="What needs to be done?" />
+      <button id="addBtn">Add</button>
+    </section>
+
+    <section class="filters">
+      <button class="tab active" data-filter="all">All</button>
+      <button class="tab" data-filter="active">Active</button>
+      <button class="tab" data-filter="completed">Completed</button>
+    </section>
+
+    <ul id="list" class="list"></ul>
+
+    <footer class="footer">
+      <span id="count">0 items</span>
+    </footer>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
